@@ -28,6 +28,7 @@ const name = 'Kim'
 appendMessage('You joined')
 
 socket.on('chat-message', data => {
+    console.log('Received!');
     console.log(data);
     appendMessage(`${data.name}: ${data.message}`)
 })
